@@ -6,7 +6,9 @@ var daemon = {
   spawn: function (cmd, opts) {
     if (!opts) opts = {}
     opts.detached = true
-    if (typeof opts.stdio === 'undefined') opts.stdio = ['ignore', opts.stdout, opts.stderr]
+    if (typeof opts.stdio === 'undefined') {
+      opts.stdio = [opts.stdin || 'ignore', opts.stdout || 'ignore', opts.stderr || 'ignore']
+    }
     var child = spawn(cmd, opts)
     child.unref()
     return child

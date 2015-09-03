@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "JS api to spawn daemons, check their status, and kill them",
   "main": "index.js",
+  "bin": {
+    "daemonspawn": "cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +13,17 @@
   "license": "ISC",
   "dependencies": {
     "is-running": "^1.0.5",
+    "minimist": "^1.2.0",
     "npm-execspawn": "^1.2.0",
     "tree-kill": "^0.1.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxogden/daemonspawn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxogden/daemonspawn/issues"
+  },
+  "homepage": "https://github.com/maxogden/daemonspawn#readme"
 }
