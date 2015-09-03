@@ -1,6 +1,6 @@
 {
   "name": "daemonspawn",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "JS api to spawn daemons, check their status, and kill them",
   "main": "index.js",
   "bin": {
