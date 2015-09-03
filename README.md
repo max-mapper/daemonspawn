@@ -27,6 +27,13 @@ checks if `pid` is running, calls cb with `(error, running)` where `running` is 
 ```sh
 $ npm i daemonspawn -g
 
+$ daemonspawn
+Usage:    daemonspawn <spawn,status,kill> [args..]
+
+spawn     spawns a daemon, prints pid to stdout
+status    given a pid of a daemon, checks if daemon is running or not
+kill      given a pid of a daemon, kills the daemon with SIGKILL
+
 $ daemonspawn spawn node server.js
 3762
 
